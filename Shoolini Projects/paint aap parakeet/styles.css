@@ -148,3 +148,38 @@ body{
         width: 24px;
     }
 }
+
+
+@media screen and (max-height: 453px) {
+    #canvas{
+        margin-top: 73px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    #canvas{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-height: 357px) {
+    #canvas{
+        margin-top: 128px;
+    }
+}
+
+@media screen and (max-height: 310px) {
+    #canvas{
+        margin-top: 155px;
+    }
+}
+@media screen and (max-height: 263px) {
+    #canvas{
+        margin-top: 200px;
+    }
+}
+@media screen and (max-height: 188px) {
+    #canvas{
+        margin-top: 254px;
+    }
+}
