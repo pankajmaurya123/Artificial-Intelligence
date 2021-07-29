@@ -1,0 +1,150 @@
+body{
+    background-color:#6b6d6d;
+}
+
+.toolbox{
+    display: block;
+    width: 41px;
+    height:100%;
+    position: fixed;
+    background-color: #afd1d1;
+}
+
+.toolbox .group{
+    background-color:#c6caca;
+    border-bottom: thin solid rgb(46, 45, 45);
+}
+
+.toolbox .group .item{
+    width:51%;
+    padding:10px;
+    cursor: pointer;
+}
+
+.toolbox .group .item img{
+    width: 100%;
+    height: 100%;
+}
+
+.toolbox .group .item.active, .toolbox .group .item:hover{
+    background-color:#a9b9b9;
+}
+
+.toolbox .group.stroks .item{
+    display: inline-flex;
+    position: relative;
+}
+
+.toolbox .group.stroks .item .stroke{
+    display: inline-flex;
+    background-color: rgb(179, 153, 153);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
+.toolbox .group.colors .item .swatch{
+    box-sizing: border-box;
+    width:100%;
+    height: 100%;
+    border:2px black solid;
+}
+
+.toolbox.left{
+    top:0px;
+    left:0px;
+}
+
+.toolbox.right{
+    top:0px;
+    right:0px;
+}
+
+#canvas{
+    display: block;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+}
+.color-box{
+    height:20px;
+}
+
+@media screen and (max-width: 725px) {
+    body{
+        padding: 0%;
+        position: relative;
+    }
+    .toolbox.left{
+        position: absolute;
+        top:-6px;
+        left:-6px;
+    }
+    
+    .toolbox.right{
+        position: absolute;
+        top:28px;
+        left:-6px;
+    }
+    #canvas{
+        margin-top: 7%;    
+    }
+    .toolbox{
+        display: inline-flex;
+        width: 100%;
+        height: 41px;
+        position: fixed;
+        background-color: #afd1d1;
+    }
+    
+    .toolbox .group{
+        display: inline-flex;
+        background-color:#c6caca;
+        border-bottom: thin solid rgb(46, 45, 45);
+    }
+    
+    .toolbox .group .item{
+        width:24px;
+        padding:10px;
+        cursor: pointer;
+    }
+    
+    .toolbox .group .item img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .toolbox .group .item.active, .toolbox .group .item:hover{
+        background-color:#a9b9b9;
+    }
+    
+    .toolbox .group.stroks .item{
+        display: inline-flex;
+        padding: 0%;
+    }
+    
+    .toolbox .group.stroks .item .stroke{
+        background-color: rgb(179, 153, 153);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top:50%;
+        left:50%;
+    }
+    
+    .toolbox .group.colors .item .swatch{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border:2px black solid;
+    }
+    
+    .color-box{
+        height:24px;
+        width: 24px;
+    }
+}
