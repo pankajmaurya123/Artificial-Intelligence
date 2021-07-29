@@ -45,13 +45,13 @@ document.querySelectorAll("[data-tool]").forEach(
                 case Tool.TOOL_CIRCLE:
                 case Tool.TOOL_TRIANGLE:
                 case Tool.TOOL_PENCIL:
-                    document.querySelector(".group.pencil").style.display = "block";
+                    document.querySelector(".group.pencil").style.display = "inline-flex";
                     document.querySelector(".group.brush").style.display = "none";
                     break;
                 case Tool.TOOL_BRUSH:
                 case Tool.TOOL_ERASER:
                     document.querySelector(".group.pencil").style.display = "none";
-                    document.querySelector(".group.brush").style.display = "block";
+                    document.querySelector(".group.brush").style.display = "inline-flex";
                     break;
                 default:
                     document.querySelector(".group.pencil").style.display = "none";
